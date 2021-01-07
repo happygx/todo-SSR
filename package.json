@@ -1,0 +1,60 @@
+{
+  "name": "vue.js-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.client.js",
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.client.js",
+    "lint": "eslint --ext .js --ext .jsx --ext .vue client/",
+    "lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue client/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carrieguo/vue.js-learn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carrieguo/vue.js-learn/issues"
+  },
+  "homepage": "https://github.com/carrieguo/vue.js-learn#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "autoprefixer": "^9.6.1",
+    "babel-eslint": "^10.1.0",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.0.0",
+    "eslint": "^7.17.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-html": "^6.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "file-loader": "^4.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss": "^7.0.17",
+    "postcss-loader": "^3.0.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "url-loader": "^2.0.1",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^5.7.3"
+  }
+}
