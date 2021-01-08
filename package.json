@@ -7,14 +7,11 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.client.js",
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.client.js",
     "lint": "eslint --ext .js --ext .jsx --ext .vue client/",
-    "lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue client/",
-    "pre-commit": "npm run lint"
+    "lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue client/"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "node ./hooks/pre-commit",
-      "commit-msg": "node ./hooks/commit-msg $HUSKY_GIT_PARAMS && commitlint -E HUSKY_GIT_PARAMS",
-      "post-merge": "node ./hooks/post-merge"
+      "pre-commit": "npm run lint"
     }
   },
   "repository": {
