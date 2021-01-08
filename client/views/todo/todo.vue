@@ -25,7 +25,7 @@
 <script>
 import Item from './item.vue'
 import Tabs from './tabs.vue'
-import { constants } from 'crypto'
+// import { constants } from 'crypto'
 
 let id = 0
 
