@@ -8,7 +8,14 @@
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.client.js",
     "lint": "eslint --ext .js --ext .jsx --ext .vue client/",
     "lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue client/",
-    "precommit": "npm run lint"
+    "pre-commit": "npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "node ./hooks/pre-commit",
+      "commit-msg": "node ./hooks/commit-msg $HUSKY_GIT_PARAMS && commitlint -E HUSKY_GIT_PARAMS",
+      "post-merge": "node ./hooks/post-merge"
+    }
   },
   "repository": {
     "type": "git",
@@ -17,9 +24,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/carrieguo/vue.js-learn/issues"
+    "url": "https://github.com/happygx/todo-SSR/issues"
   },
-  "homepage": "https://github.com/carrieguo/vue.js-learn#readme",
+  "homepage": "https://github.com/happygx/todo-SSR#readme",
   "dependencies": {
     "vue": "^2.6.10"
   },
